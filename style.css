@@ -1,0 +1,157 @@
+/* Gradient Background */
+body {
+    background: linear-gradient(to bottom right, #4307b5, #8a03b5);
+    font-family: Arial, sans-serif;
+    color: #333;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    margin: 0;
+  }
+  
+  /* Container Styling */
+  .container {
+    background: white;
+    border-radius: 15px;
+    padding: 20px;
+    width: calc(100% - 40px);
+    max-width: 400px;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
+    text-align: center;
+    margin: 20px;
+  }
+  
+  /* Heading */
+  h1 {
+    font-size: 2rem;
+    margin-bottom: 20px;
+    color: #4307b5;
+    font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif
+  }
+  
+  /* Input Group */
+  .input-group {
+    margin-bottom: 20px;
+    text-align: center;
+    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif
+  }
+  
+  .input-group label {
+    display: block;
+    margin-bottom: 10px;
+    font-size: 1rem;
+    color: #333;
+  }
+  
+  .input-group input {
+    width: 80%;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    font-size: 1rem;
+    text-align: center;
+  }
+  
+  .input-group input:focus {
+    outline: none;
+    border-color: #8a03b5;
+    box-shadow: 0 0 5px rgba(138, 3, 181, 0.5);
+  }
+  
+  /* Button Styling */
+  button {
+    width: 80%;
+    padding: 10px;
+    border: none;
+    border-radius: 8px;
+    font-size: 1rem;
+    cursor: pointer;
+    margin-bottom: 20px;
+    transition: background 0.3s ease;
+  }
+  
+  /* Submit Button */
+  button[type='submit'] {
+    background: linear-gradient(to bottom right, #4307b5, #8a03b5);
+    color: white;
+    font-size: 1.1rem;
+    font-family:Georgia, 'Times New Roman', Times, serif;
+  }
+  
+  button[type='submit']:hover {
+    background: linear-gradient(to bottom right, #8a03b5, #4307b5);
+  }
+  
+  /* Reset Button */
+  #resetBtn {
+    font-size: 1.1rem;
+    color:white;
+    background: linear-gradient(to bottom right, #4307b5, #8a03b5);
+    font-family:Georgia, 'Times New Roman', Times, serif
+  }
+  
+  #resetBtn:hover {
+    background: linear-gradient(to bottom right, #8a03b5, #4307b5);
+    
+  }
+  
+  /* Result Styling */
+  #result {
+    margin-top: 20px;
+  }
+  
+  #result p {
+    font-size: 1.2rem;
+    margin: 10px 0;
+   
+  }
+  
+  #bmiValue,
+  #bmiCategory {
+    font-weight: bold;
+    color: #8a03b5;
+  }
+  
+  /* BMI Indicator Bar */
+  #bmiIndicatorContainer {
+    width: 100%;
+    height: 20px;
+    background: #eee;
+    border-radius: 10px;
+    margin-top: 20px;
+    overflow: hidden;
+  }
+  
+  #bmiIndicatorBar {
+    height: 100%;
+    width: 0%;
+    background-color: #8a03b5;
+    transition: width 0.5s ease;
+    border-radius: 10px;
+  }
+  
+  /* Hidden Class */
+  .hidden {
+    display: none;
+  }
+  
+  /* Responsive Design */
+  @media (max-width: 480px) {
+    .container {
+      padding: 20px;
+      width: calc(100% - 40px);
+    }
+  
+    h1 {
+      font-size: 1.75rem;
+      margin-bottom: 20px;
+    }
+  
+    .input-group input,
+    button {
+      width: 90%;
+      padding: 10px;
+    }
+  }
+  
